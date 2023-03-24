@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SelctionController : MonoBehaviour
+public class SelectionController : MonoBehaviour
 {
     [SerializeField] Transform cameraTrans;
     [SerializeField] LayerMask layerMask;
