@@ -10,8 +10,8 @@ public class PortalCamera : MonoBehaviour
 	public Transform otherPortal;
 	private void Start()
 	{
-		//rendtex.width = Screen.width;
-		//rendtex.height = Screen.height;
+		rendtex.width = Screen.width;
+		rendtex.height = Screen.height;
 	}
 	// Update is called once per frame
 	void Update()
