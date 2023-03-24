@@ -29,7 +29,7 @@ public class Teleport : MonoBehaviour
         yield return new WaitForSeconds(0.001f);
         playerController.enabled = false;
         yield return new WaitForSeconds(0.001f);
-        other.transform.position = new Vector3(destination.position.x, destination.position.y-0.5f, destination.position.z-1.7f);
+        other.transform.position = new Vector3(destination.position.x, destination.position.y-0.25f, destination.position.z-0.3f);
         yield return new WaitForSeconds(0.001f);
         playerController.enabled = true;
     }
