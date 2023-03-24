@@ -8,8 +8,17 @@ public class PortalCamera : MonoBehaviour
 	public Transform playerCamera;
 	public Transform portal;
 	public Transform otherPortal;
+	private Camera cam;
+	public Material portalMaterial;
 	private void Start()
 	{
+		cam = GetComponent<Camera>();
+		if(cam.targetTexture != null)
+        {
+			cam.targetTexture.Release();
+        }
+		cam.targetTexture = new RenderTexture(960, Screen.height-200, 24);
+		portalMaterial.mainTexture = cam.targetTexture;
 		rendtex.width = Screen.width;
 		rendtex.height = Screen.height;
 	}
@@ -17,7 +26,7 @@ public class PortalCamera : MonoBehaviour
 	void Update()
 	{
 		Vector3 playerOffsetFromPortal = playerCamera.position - otherPortal.position;
-		transform.position = portal.position + playerOffsetFromPortal - new Vector3(0,0,1);
+		transform.position = portal.position + playerOffsetFromPortal - new Vector3(0,0,1.7f);
 
 		float angularDifferenceBetweenPortalRotations = Quaternion.Angle(portal.rotation, otherPortal.rotation);
 
