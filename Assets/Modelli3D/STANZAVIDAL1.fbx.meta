@@ -78,32 +78,32 @@ ModelImporter:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: Bricks063_2K_Roughness
-    second: {fileID: 2800000, guid: 99cf4a8d8e9629a4db0660d9455cb451, type: 3}
+    second: {fileID: 2800000, guid: 7ca1fad6b7bd32443abd09fb0f51e1b9, type: 3}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: Old red wood_Metallic
-    second: {fileID: 2800000, guid: e62849d6b9d4a114daa1919ba7835d88, type: 3}
+    second: {fileID: 2800000, guid: ae28b0c4240d0f844a70b7f7afc6772f, type: 3}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: Old red wood_Roughness
-    second: {fileID: 2800000, guid: 321400b7731d0fd47aba62f8619580e3, type: 3}
+    second: {fileID: 2800000, guid: 69dc32b0a8904484f8383202caea96ec, type: 3}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: Wood_Base_01_metallic
-    second: {fileID: 2800000, guid: b964968fb22303b4e9e94e73a5f1e34f, type: 3}
+    second: {fileID: 2800000, guid: 37f8971d746d88648867135244e86107, type: 3}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: concrete_raw_Metallic
-    second: {fileID: 2800000, guid: d1b679a4b94d5d3418bc3d02bf4dcfa0, type: 3}
+    second: {fileID: 2800000, guid: 2b00e422e646bea40838003c3ea15587, type: 3}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: concrete_raw_Roughness
-    second: {fileID: 2800000, guid: 8a7f82a2424d79048b8f30468b3d74c4, type: 3}
+    second: {fileID: 2800000, guid: 0b8d11e5efbcac3429c9e954a680f3b4, type: 3}
   materials:
     materialImportMode: 2
     materialName: 0
