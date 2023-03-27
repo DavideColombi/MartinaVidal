@@ -19,7 +19,7 @@ public class SelectionController : MonoBehaviour
     {
         RaycastHit hit;
         // Does the ray intersect any objects excluding the player layer
-        if (Physics.Raycast(cameraTrans.position, cameraTrans.forward, out hit, Mathf.Infinity, layerMask))
+        if (Physics.Raycast(cameraTrans.position, cameraTrans.forward, out hit, 3f, layerMask))
         {
             //hittato
             for(int i=0; i < hit.transform.childCount; i++)
@@ -27,6 +27,13 @@ public class SelectionController : MonoBehaviour
                 GameObject canvas = hit.transform.GetChild(i).gameObject;
                 if(canvas.name == "Canvas")
                 {
+                    if(lastObject != null)
+                    {
+                        if(lastObject.transform.position != canvas.transform.position)
+                        {
+                            lastObject.SetActive(false);
+                        }
+                    }
                     timerSpegnimento = 0;
                     canvas.SetActive(true);
                     lastObject = canvas;
