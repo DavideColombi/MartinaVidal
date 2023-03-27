@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class RaycastUI : MonoBehaviour
@@ -8,7 +9,7 @@ public class RaycastUI : MonoBehaviour
     Transform cameraTrans;
     [SerializeField] LayerMask layerMask;
     private GameObject lastObject;
-    float timerSpegnimento = 0;
+    float timerCambioScena = 0;
     [SerializeField] Transform imgSelection;
     [SerializeField] Sprite buranoVecchia;
     Sprite buranoNuova;
@@ -17,6 +18,8 @@ public class RaycastUI : MonoBehaviour
     Vector3 translateTo = new Vector3();
     float translateTimer = 0;
     bool translate;
+    [SerializeField] Slider slider;
+    GameObject scrittaBottone;
     // Start is called before the first frame update
     void Start()
     {
@@ -68,10 +71,32 @@ public class RaycastUI : MonoBehaviour
                 burano.sprite = buranoNuova;
             }
             //hittato
-            
+            if (hit.transform.name == "Button")
+            {
+                if(scrittaBottone == null)
+                {
+                    scrittaBottone = hit.transform.GetChild(0).gameObject;
+                }
+                scrittaBottone.SetActive(false);
+                slider.gameObject.SetActive(true);
+                timerCambioScena += Time.deltaTime;
+                slider.value = timerCambioScena;
+                if(timerCambioScena >= 4f)
+                {
+                    SceneManager.LoadScene("Main");
+                }
+            }
+            else
+            {
+                scrittaBottone.SetActive(true);
+                slider.gameObject.SetActive(false);
+                timerCambioScena = 0f;
+                slider.value = timerCambioScena;
+            }
 
 
         }
+
         if (translate)
         {
             translateTimer += Time.deltaTime;
