@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class RaycastUI : MonoBehaviour
 {
@@ -10,6 +11,8 @@ public class RaycastUI : MonoBehaviour
     float timerSpegnimento = 0;
     [SerializeField] Transform imgSelection;
     [SerializeField] Sprite buranoVecchia;
+    Sprite buranoNuova;
+    Image burano;
     Vector3 translateFrom = new Vector3();
     Vector3 translateTo = new Vector3();
     float translateTimer = 0;
@@ -51,6 +54,19 @@ public class RaycastUI : MonoBehaviour
                 }
                 
             }
+            if(hit.transform.name == "BuranoVr")
+            {
+                if(buranoNuova == null)
+                {
+                    buranoNuova = hit.transform.GetComponent<Image>().sprite;
+                    burano = hit.transform.GetComponent<Image>();
+                }
+                burano.sprite = buranoVecchia;
+            }
+            else
+            {
+                burano.sprite = buranoNuova;
+            }
             //hittato
             
 
@@ -59,8 +75,8 @@ public class RaycastUI : MonoBehaviour
         if (translate)
         {
             translateTimer += Time.deltaTime;
-            imgSelection.position = Vector3.Lerp(translateFrom, translateTo, translateTimer);
-            if (translateTimer >= 1f)
+            imgSelection.position = Vector3.Lerp(translateFrom, translateTo, translateTimer/0.3f);
+            if (translateTimer >= 0.3f)
             {
                 translate = false;
                 translateTimer = 0f;

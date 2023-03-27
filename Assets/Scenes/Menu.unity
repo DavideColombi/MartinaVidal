@@ -199,6 +199,29 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 123447545}
   m_CullTransparentMesh: 1
+--- !u!1 &133100417 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100008, guid: ce816f2e6abb0504092c23ed9b970dfd,
+    type: 3}
+  m_PrefabInstance: {fileID: 2125064930}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &133100418
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 133100417}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db891e0aaabb2dc45a6eea9bb0685030, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  layerMask:
+    serializedVersion: 2
+    m_Bits: 32
+  imgSelection: {fileID: 135820056}
+  buranoVecchia: {fileID: 21300000, guid: 6bf3429d14070bf419a01f07bd45e613, type: 3}
 --- !u!1 &135820055
 GameObject:
   m_ObjectHideFlags: 0
@@ -354,9 +377,10 @@ GameObject:
   - component: {fileID: 400216753}
   - component: {fileID: 400216755}
   - component: {fileID: 400216754}
+  - component: {fileID: 400216756}
   m_Layer: 5
   m_Name: Design
-  m_TagString: Untagged
+  m_TagString: Card
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -419,6 +443,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 400216752}
   m_CullTransparentMesh: 1
+--- !u!65 &400216756
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 400216752}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 47.18878, y: 53.60834, z: 1.7745337}
+  m_Center: {x: 0.05185406, y: -0.048629448, z: 1.1057457}
 --- !u!1 &576585790
 GameObject:
   m_ObjectHideFlags: 0
@@ -430,9 +467,10 @@ GameObject:
   - component: {fileID: 576585791}
   - component: {fileID: 576585793}
   - component: {fileID: 576585792}
+  - component: {fileID: 576585794}
   m_Layer: 5
   m_Name: BuranoVr
-  m_TagString: Untagged
+  m_TagString: Card
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -495,6 +533,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 576585790}
   m_CullTransparentMesh: 1
+--- !u!65 &576585794
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 576585790}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 47.18878, y: 53.60834, z: 1.7745337}
+  m_Center: {x: 0.05185406, y: -0.048629448, z: 1.1057457}
 --- !u!1 &1015851464
 GameObject:
   m_ObjectHideFlags: 0
@@ -727,9 +778,10 @@ GameObject:
   - component: {fileID: 1510946789}
   - component: {fileID: 1510946791}
   - component: {fileID: 1510946790}
+  - component: {fileID: 1510946792}
   m_Layer: 5
   m_Name: Corso
-  m_TagString: Untagged
+  m_TagString: Card
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -792,6 +844,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1510946788}
   m_CullTransparentMesh: 1
+--- !u!65 &1510946792
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1510946788}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 47.18878, y: 53.60834, z: 1.7745337}
+  m_Center: {x: 0.05185406, y: -0.048629448, z: 1.1057457}
 --- !u!1001 &2125064930
 PrefabInstance:
   m_ObjectHideFlags: 0
