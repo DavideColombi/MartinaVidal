@@ -5,6 +5,106 @@ ModelImporter:
   internalIDToNameTable: []
   externalObjects:
   - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Copper chandelier.001
+    second: {fileID: 2100000, guid: ed445c211d9370949a523e98a71b60c5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material
+    second: {fileID: 2100000, guid: 65ac0e0e54d454d4e95120afe609a512, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.001
+    second: {fileID: 2100000, guid: 940f3f67d358e70489b62da046b43dda, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.002
+    second: {fileID: 2100000, guid: 520fd9aaad9bce342a12d996d9bff21a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.003
+    second: {fileID: 2100000, guid: 728c243168cf3834a88f44f3e2403102, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.004
+    second: {fileID: 2100000, guid: 5263c9b72152d3b4b84de6c420ac52ca, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.006
+    second: {fileID: 2100000, guid: 1c225d95396e626449ab7e0a030ca6a3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.007
+    second: {fileID: 2100000, guid: 4736cf1bf61f9004a864579ff4a04cd7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.008
+    second: {fileID: 2100000, guid: bc6adc8f1931e6c4fb9f4253b5110e43, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.luci
+    second: {fileID: 2100000, guid: 8a30609471082dc46a219a986c3e24d6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Old red wood
+    second: {fileID: 2100000, guid: abd614877f79e4840ab0c0b7c8c264dd, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Pavimentovecchio
+    second: {fileID: 2100000, guid: 40e9d71e4c3793b42936d141d932b1e5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Wood Base 01
+    second: {fileID: 2100000, guid: 47a09cf3f25810c4ba75fa93ea321d3c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: aluminium used
+    second: {fileID: 2100000, guid: 55c60fac0fd939c4dbca0b731459cf4a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: fire
+    second: {fileID: 2100000, guid: ad668f4386cfd95429fa2c25b925480f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: luce candelab
+    second: {fileID: 2100000, guid: 98884d6299bbda842a7c2fe44102991e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: luce nuovo
+    second: {fileID: 2100000, guid: c086f475432eaaf41b8b8500fc6ef611, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: material
+    second: {fileID: 2100000, guid: 4357e6192bf8bcc47ac03e1a2929a812, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: material_1
+    second: {fileID: 2100000, guid: 222808dd5e43fc64da16809b7fe0d887, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: zhuti
+    second: {fileID: 2100000, guid: e6a88dbba6e03db4ca9d75a9330d19b1, type: 2}
+  - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: 1#Chandelier_Emissive
