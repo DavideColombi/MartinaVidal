@@ -8,6 +8,7 @@ public class SelectionController : MonoBehaviour
     [SerializeField] LayerMask layerMask;
     private GameObject lastObject;
     float timerSpegnimento = 0;
+    [SerializeField] float maxSecondiSpegnimento = 4f;
     // Start is called before the first frame update
     void Start()
     {
@@ -46,7 +47,7 @@ public class SelectionController : MonoBehaviour
         {
             timerSpegnimento += Time.deltaTime;
             //non hittato
-            if(lastObject != null && timerSpegnimento >= 4f)
+            if(lastObject != null && timerSpegnimento >= maxSecondiSpegnimento)
             {
                 lastObject.SetActive(false);
                 lastObject = null;
